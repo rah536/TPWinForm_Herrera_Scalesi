@@ -32,8 +32,12 @@ namespace TPWinForms
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            Form E = new ModificarArticulos();
-            E.ShowDialog();
+            Articulo seleccionado;
+            seleccionado = (Articulo)dgvListadoArticulos.CurrentRow.DataBoundItem;
+            
+            
+            Form modificar = new AgregarArticulos(seleccionado);
+            modificar.ShowDialog();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)

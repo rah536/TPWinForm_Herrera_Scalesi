@@ -14,11 +14,20 @@ namespace TPWinForms
 {
     public partial class AgregarArticulos : Form
     {
+        private Articulo articulo = null;
+        
+        
         public AgregarArticulos()
         {
             InitializeComponent();
         }
 
+        public AgregarArticulos(Articulo articulo)
+        {
+            InitializeComponent();
+            this.articulo = articulo;
+        }
+        
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Close();
@@ -63,8 +72,24 @@ namespace TPWinForms
             try
             {
                 cbCategoria.DataSource = categoriaNegocio.listar();
-                cbMarca.DataSource = marcaNegocio.listar(); 
-            
+                cbCategoria.ValueMember = "Id";
+                cbCategoria.DisplayMember = "Descripcion";
+                
+                cbMarca.DataSource = marcaNegocio.listar();
+                cbMarca.ValueMember = "Id";
+                cbMarca.DisplayMember = "Descripcion";
+
+                if (articulo != null)
+                {
+                    txtCodigo.Text = articulo.Codigo.ToString();
+                    txtNombre.Text = articulo.Nombre.ToString();
+                    txtDescripcion.Text = articulo.Descripcion.ToString();
+                    //txtUrlImagen.Text = articulo.ImagenUrl.ToString();
+                    txtPrecio.Text = articulo.Precio.ToString();
+
+                    cbCategoria.SelectedValue = articulo.Categoria.Id;
+                    cbMarca.SelectedValue = articulo.Marca.Id;
+                }
             }
             catch (Exception ex)
             {
