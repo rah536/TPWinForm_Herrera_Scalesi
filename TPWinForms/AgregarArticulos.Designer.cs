@@ -31,19 +31,19 @@
             this.lblCodigo = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
-            this.lblIdMarca = new System.Windows.Forms.Label();
-            this.lblIdCategoria = new System.Windows.Forms.Label();
+            this.lblMarca = new System.Windows.Forms.Label();
+            this.lblCategoria = new System.Windows.Forms.Label();
             this.lblImagenUrl = new System.Windows.Forms.Label();
             this.lblPrecio = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.txtIdMarca = new System.Windows.Forms.TextBox();
-            this.txtIdCategoria = new System.Windows.Forms.TextBox();
             this.txtUrlImagen = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.cbMarca = new System.Windows.Forms.ComboBox();
+            this.cbCategoria = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblCodigo
@@ -73,23 +73,23 @@
             this.lblDescripcion.TabIndex = 2;
             this.lblDescripcion.Text = "Descripcion";
             // 
-            // lblIdMarca
+            // lblMarca
             // 
-            this.lblIdMarca.AutoSize = true;
-            this.lblIdMarca.Location = new System.Drawing.Point(69, 217);
-            this.lblIdMarca.Name = "lblIdMarca";
-            this.lblIdMarca.Size = new System.Drawing.Size(49, 13);
-            this.lblIdMarca.TabIndex = 3;
-            this.lblIdMarca.Text = "Id Marca";
+            this.lblMarca.AutoSize = true;
+            this.lblMarca.Location = new System.Drawing.Point(69, 217);
+            this.lblMarca.Name = "lblMarca";
+            this.lblMarca.Size = new System.Drawing.Size(37, 13);
+            this.lblMarca.TabIndex = 3;
+            this.lblMarca.Text = "Marca";
             // 
-            // lblIdCategoria
+            // lblCategoria
             // 
-            this.lblIdCategoria.AutoSize = true;
-            this.lblIdCategoria.Location = new System.Drawing.Point(68, 272);
-            this.lblIdCategoria.Name = "lblIdCategoria";
-            this.lblIdCategoria.Size = new System.Drawing.Size(64, 13);
-            this.lblIdCategoria.TabIndex = 4;
-            this.lblIdCategoria.Text = "Id Categoria";
+            this.lblCategoria.AutoSize = true;
+            this.lblCategoria.Location = new System.Drawing.Point(68, 272);
+            this.lblCategoria.Name = "lblCategoria";
+            this.lblCategoria.Size = new System.Drawing.Size(52, 13);
+            this.lblCategoria.TabIndex = 4;
+            this.lblCategoria.Text = "Categoria";
             // 
             // lblImagenUrl
             // 
@@ -140,20 +140,6 @@
             this.txtDescripcion.Size = new System.Drawing.Size(100, 20);
             this.txtDescripcion.TabIndex = 10;
             // 
-            // txtIdMarca
-            // 
-            this.txtIdMarca.Location = new System.Drawing.Point(228, 210);
-            this.txtIdMarca.Name = "txtIdMarca";
-            this.txtIdMarca.Size = new System.Drawing.Size(100, 20);
-            this.txtIdMarca.TabIndex = 11;
-            // 
-            // txtIdCategoria
-            // 
-            this.txtIdCategoria.Location = new System.Drawing.Point(228, 269);
-            this.txtIdCategoria.Name = "txtIdCategoria";
-            this.txtIdCategoria.Size = new System.Drawing.Size(100, 20);
-            this.txtIdCategoria.TabIndex = 12;
-            // 
             // txtUrlImagen
             // 
             this.txtUrlImagen.Location = new System.Drawing.Point(228, 321);
@@ -178,29 +164,48 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // cbMarca
+            // 
+            this.cbMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMarca.FormattingEnabled = true;
+            this.cbMarca.Location = new System.Drawing.Point(228, 217);
+            this.cbMarca.Name = "cbMarca";
+            this.cbMarca.Size = new System.Drawing.Size(121, 21);
+            this.cbMarca.TabIndex = 16;
+            // 
+            // cbCategoria
+            // 
+            this.cbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCategoria.FormattingEnabled = true;
+            this.cbCategoria.Location = new System.Drawing.Point(228, 272);
+            this.cbCategoria.Name = "cbCategoria";
+            this.cbCategoria.Size = new System.Drawing.Size(121, 21);
+            this.cbCategoria.TabIndex = 17;
+            // 
             // AgregarArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cbCategoria);
+            this.Controls.Add(this.cbMarca);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.txtUrlImagen);
-            this.Controls.Add(this.txtIdCategoria);
-            this.Controls.Add(this.txtIdMarca);
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.lblPrecio);
             this.Controls.Add(this.lblImagenUrl);
-            this.Controls.Add(this.lblIdCategoria);
-            this.Controls.Add(this.lblIdMarca);
+            this.Controls.Add(this.lblCategoria);
+            this.Controls.Add(this.lblMarca);
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblCodigo);
             this.Name = "AgregarArticulos";
             this.Text = "AgregarArticulos";
+            this.Load += new System.EventHandler(this.AgregarArticulos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,18 +216,18 @@
         private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblDescripcion;
-        private System.Windows.Forms.Label lblIdMarca;
-        private System.Windows.Forms.Label lblIdCategoria;
+        private System.Windows.Forms.Label lblMarca;
+        private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.Label lblImagenUrl;
         private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtDescripcion;
-        private System.Windows.Forms.TextBox txtIdMarca;
-        private System.Windows.Forms.TextBox txtIdCategoria;
         private System.Windows.Forms.TextBox txtUrlImagen;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.ComboBox cbMarca;
+        private System.Windows.Forms.ComboBox cbCategoria;
     }
 }

@@ -61,7 +61,10 @@ namespace Negocio
             
             try
             {
-                accesoDatos.setearConsulta("insert into dbo.ARTICULOS (Codigo, Nombre,Descripcion,IdMarca,IdCategoria,ImagenUrl,Precio) values('" + articulo.Codigo + "','" + articulo.Nombre + "','" + articulo.Descripcion + "'," + articulo.IdMarca + "," + articulo.IdCategoria + ", '" + articulo.ImagenUrl + "'," + articulo.Precio + ")");
+                accesoDatos.setearConsulta("insert into dbo.ARTICULOS (Codigo, Nombre,Descripcion,ImagenUrl,Precio,IdMarca,IdCategoria) values('" + articulo.Codigo + "','" + articulo.Nombre + "','" + articulo.Descripcion + "', '" + articulo.ImagenUrl + "'," + articulo.Precio + " , @IdMarca, @IdCategoria)");
+                accesoDatos.setearParametro("@IdMarca",articulo.Marca.Id);
+                accesoDatos.setearParametro("@IdCategoria",articulo.Categoria.Id);
+                
                 accesoDatos.ejecutarAccion();
             
             }

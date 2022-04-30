@@ -35,12 +35,14 @@ namespace TPWinForms
                 articulo.Codigo = txtCodigo.Text;
                 articulo.Nombre = txtNombre.Text;
                 articulo.Descripcion = txtDescripcion.Text;
-                articulo.IdMarca = int.Parse(txtIdMarca.Text);
-                articulo.IdCategoria = int.Parse(txtIdCategoria.Text);
                 articulo.ImagenUrl = txtUrlImagen.Text;
                 articulo.Precio = float.Parse(txtPrecio.Text);
-
+                articulo.Categoria = (Categoria)cbCategoria.SelectedItem;
+                articulo.Marca = (Marca)cbMarca.SelectedItem;
+                
+                
                 articuloNegocio.agregar(articulo);
+                
                 MessageBox.Show("Articulo agregado exitosamente");
                 Close();
             
@@ -51,6 +53,26 @@ namespace TPWinForms
 
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void AgregarArticulos_Load(object sender, EventArgs e)
+        {
+           CategoriaNegocio categoriaNegocio = new CategoriaNegocio(); 
+           MarcaNegocio marcaNegocio = new MarcaNegocio();
+
+            try
+            {
+                cbCategoria.DataSource = categoriaNegocio.listar();
+                cbMarca.DataSource = marcaNegocio.listar(); 
+            
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+
+
         }
     }
 }
