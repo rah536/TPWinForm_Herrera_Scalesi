@@ -20,37 +20,37 @@ namespace TPWinForms
         private void btnListar_Click(object sender, EventArgs e)
         {
             Form E = new ListadoArticulos();
-            E.Show();
+            E.ShowDialog();
         }
 
         private void btnBuscarArticulos_Click(object sender, EventArgs e)
         {
             Form E = new BusquedaArticulos();
-            E.Show();
+            E.ShowDialog();
         }
 
         private void btnAgregarArticulos_Click(object sender, EventArgs e)
         {
             Form E = new AgregarArticulos();
-            E.Show();
+            E.ShowDialog();
         }
 
         private void btnModificarArticulos_Click(object sender, EventArgs e)
         {
             Form E = new ModificarArticulos();
-            E.Show();
+            E.ShowDialog();
         }
 
         private void btnEliminarArticulos_Click(object sender, EventArgs e)
         {
             Form E = new EliminarArticulos();
-            E.Show();
+            E.ShowDialog();
         }
 
         private void btnDetalleArticulos_Click(object sender, EventArgs e)
         {
             Form E = new DetalleArticulos();
-            E.Show();
+            E.ShowDialog();
         }
     }
 }

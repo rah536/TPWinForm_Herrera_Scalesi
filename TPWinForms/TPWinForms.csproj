@@ -90,6 +90,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AgregarArticulos.resx">
+      <DependentUpon>AgregarArticulos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListadoArticulos.resx">
       <DependentUpon>ListadoArticulos.cs</DependentUpon>
     </EmbeddedResource>
