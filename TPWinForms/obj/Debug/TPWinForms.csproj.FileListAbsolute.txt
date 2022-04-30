@@ -16,3 +16,4 @@ C:\Users\user\Desktop\TPWinForm\TPWinForms\bin\Debug\Negocio.pdb
 C:\Users\user\Desktop\TPWinForm\TPWinForms\obj\Debug\TPWinForms.ListadoArticulos.resources
 C:\Users\user\Desktop\TPWinForm\TPWinForms\obj\Debug\TPWinForms.csproj.CopyComplete
 C:\Users\user\Desktop\TPWinForm\TPWinForms\obj\Debug\TPWinForms.AgregarArticulos.resources
+C:\Users\user\Desktop\TPWinForm\TPWinForms\obj\Debug\TPWinForms.ModificarArticulos.resources

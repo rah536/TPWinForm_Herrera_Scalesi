@@ -33,8 +33,6 @@ namespace TPWinForms
             this.btnListar = new System.Windows.Forms.Button();
             this.btnBuscarArticulos = new System.Windows.Forms.Button();
             this.btnAgregarArticulos = new System.Windows.Forms.Button();
-            this.btnModificarArticulos = new System.Windows.Forms.Button();
-            this.btnEliminarArticulos = new System.Windows.Forms.Button();
             this.btnDetalleArticulos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -77,31 +75,11 @@ namespace TPWinForms
             this.btnAgregarArticulos.UseVisualStyleBackColor = true;
             this.btnAgregarArticulos.Click += new System.EventHandler(this.btnAgregarArticulos_Click);
             // 
-            // btnModificarArticulos
-            // 
-            this.btnModificarArticulos.Location = new System.Drawing.Point(183, 298);
-            this.btnModificarArticulos.Name = "btnModificarArticulos";
-            this.btnModificarArticulos.Size = new System.Drawing.Size(95, 42);
-            this.btnModificarArticulos.TabIndex = 4;
-            this.btnModificarArticulos.Text = "Modificar Articulos";
-            this.btnModificarArticulos.UseVisualStyleBackColor = true;
-            this.btnModificarArticulos.Click += new System.EventHandler(this.btnModificarArticulos_Click);
-            // 
-            // btnEliminarArticulos
-            // 
-            this.btnEliminarArticulos.Location = new System.Drawing.Point(183, 366);
-            this.btnEliminarArticulos.Name = "btnEliminarArticulos";
-            this.btnEliminarArticulos.Size = new System.Drawing.Size(95, 36);
-            this.btnEliminarArticulos.TabIndex = 5;
-            this.btnEliminarArticulos.Text = "Eliminar Articulos";
-            this.btnEliminarArticulos.UseVisualStyleBackColor = true;
-            this.btnEliminarArticulos.Click += new System.EventHandler(this.btnEliminarArticulos_Click);
-            // 
             // btnDetalleArticulos
             // 
-            this.btnDetalleArticulos.Location = new System.Drawing.Point(349, 91);
+            this.btnDetalleArticulos.Location = new System.Drawing.Point(183, 298);
             this.btnDetalleArticulos.Name = "btnDetalleArticulos";
-            this.btnDetalleArticulos.Size = new System.Drawing.Size(75, 47);
+            this.btnDetalleArticulos.Size = new System.Drawing.Size(98, 40);
             this.btnDetalleArticulos.TabIndex = 6;
             this.btnDetalleArticulos.Text = "Detalle Articulos";
             this.btnDetalleArticulos.UseVisualStyleBackColor = true;
@@ -113,8 +91,6 @@ namespace TPWinForms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnDetalleArticulos);
-            this.Controls.Add(this.btnEliminarArticulos);
-            this.Controls.Add(this.btnModificarArticulos);
             this.Controls.Add(this.btnAgregarArticulos);
             this.Controls.Add(this.btnBuscarArticulos);
             this.Controls.Add(this.btnListar);
@@ -132,8 +108,6 @@ namespace TPWinForms
         private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.Button btnBuscarArticulos;
         private System.Windows.Forms.Button btnAgregarArticulos;
-        private System.Windows.Forms.Button btnModificarArticulos;
-        private System.Windows.Forms.Button btnEliminarArticulos;
         private System.Windows.Forms.Button btnDetalleArticulos;
     }
 }

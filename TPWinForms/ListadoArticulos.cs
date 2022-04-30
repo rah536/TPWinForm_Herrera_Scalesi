@@ -29,5 +29,17 @@ namespace TPWinForms
             dgvListadoArticulos.Columns["IdCategoria"].Visible = false;
             dgvListadoArticulos.Columns["ImagenUrl"].Visible = false;
         }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            Form E = new ModificarArticulos();
+            E.ShowDialog();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            Form E = new EliminarArticulos();
+            E.ShowDialog();
+        }
     }
 }

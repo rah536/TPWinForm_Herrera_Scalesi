@@ -16,5 +16,10 @@ namespace TPWinForms
         {
             InitializeComponent();
         }
+
+        private void ModificarArticulos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
