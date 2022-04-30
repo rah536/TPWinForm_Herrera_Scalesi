@@ -8,21 +8,21 @@ namespace Dominio
 {
     public class Articulo
     {
-        private int Id { get; set; }
+        public int Id { get; set; }
 
-        private string Codigo { get; set; }
+        public string Codigo { get; set; }
 
-        private string Nombre { get; set; }
+        public string Nombre { get; set; }
 
-        private string Descripcion { get; set; }
+        public string Descripcion { get; set; }
 
-        private int Idmarca { get; set; }
+        public int IdMarca { get; set; }
 
-        private int IdCategoria { get; set; }
+        public int IdCategoria { get; set; }
 
-        private string ImagenUrl { get; set; }
+        public string ImagenUrl { get; set; }
 
-        private float Precio  { get; set; }
+        public float Precio  { get; set; }
 
         public Categoria Categoria { get; set; }
 

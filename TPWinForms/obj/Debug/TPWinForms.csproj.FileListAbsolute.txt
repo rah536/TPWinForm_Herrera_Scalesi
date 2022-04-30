@@ -9,3 +9,9 @@ C:\Users\user\Desktop\TPWinForm\TPWinForms\obj\Debug\TPWinForms.csproj.CoreCompi
 C:\Users\user\Desktop\TPWinForm\TPWinForms\obj\Debug\TPWinForms.exe
 C:\Users\user\Desktop\TPWinForm\TPWinForms\obj\Debug\TPWinForms.pdb
 C:\Users\user\Desktop\TPWinForm\TPWinForms\obj\Debug\TPWinForms.Form1.resources
+C:\Users\user\Desktop\TPWinForm\TPWinForms\bin\Debug\Dominio.dll
+C:\Users\user\Desktop\TPWinForm\TPWinForms\bin\Debug\Negocio.dll
+C:\Users\user\Desktop\TPWinForm\TPWinForms\bin\Debug\Dominio.pdb
+C:\Users\user\Desktop\TPWinForm\TPWinForms\bin\Debug\Negocio.pdb
+C:\Users\user\Desktop\TPWinForm\TPWinForms\obj\Debug\TPWinForms.ListadoArticulos.resources
+C:\Users\user\Desktop\TPWinForm\TPWinForms\obj\Debug\TPWinForms.csproj.CopyComplete

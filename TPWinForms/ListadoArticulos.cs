@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Negocio;
+using Dominio;
 
 namespace TPWinForms
 {
@@ -15,6 +17,12 @@ namespace TPWinForms
         public ListadoArticulos()
         {
             InitializeComponent();
+        }
+
+        private void ListadoArticulos_Load(object sender, EventArgs e)
+        {
+            ArticuloNegocio articulo = new ArticuloNegocio();
+            dgvListadoArticulos.DataSource = articulo.listar();
         }
     }
 }

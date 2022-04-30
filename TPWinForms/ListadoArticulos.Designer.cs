@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.dgvListadoArticulos = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListadoArticulos)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dgvListadoArticulos
+            // 
+            this.dgvListadoArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListadoArticulos.Location = new System.Drawing.Point(104, 59);
+            this.dgvListadoArticulos.Name = "dgvListadoArticulos";
+            this.dgvListadoArticulos.Size = new System.Drawing.Size(449, 241);
+            this.dgvListadoArticulos.TabIndex = 0;
+            // 
+            // ListadoArticulos
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dgvListadoArticulos);
+            this.Name = "ListadoArticulos";
             this.Text = "ListadoArticulos";
+            this.Load += new System.EventHandler(this.ListadoArticulos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListadoArticulos)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dgvListadoArticulos;
     }
 }
