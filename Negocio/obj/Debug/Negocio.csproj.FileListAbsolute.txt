@@ -1,0 +1,9 @@
+C:\Users\user\Desktop\TPWinForm\Negocio\bin\Debug\Negocio.dll
+C:\Users\user\Desktop\TPWinForm\Negocio\bin\Debug\Negocio.pdb
+C:\Users\user\Desktop\TPWinForm\Negocio\bin\Debug\Dominio.dll
+C:\Users\user\Desktop\TPWinForm\Negocio\bin\Debug\Dominio.pdb
+C:\Users\user\Desktop\TPWinForm\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\TPWinForm\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\TPWinForm\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\user\Desktop\TPWinForm\Negocio\obj\Debug\Negocio.dll
+C:\Users\user\Desktop\TPWinForm\Negocio\obj\Debug\Negocio.pdb
