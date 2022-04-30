@@ -23,6 +23,11 @@ namespace TPWinForms
         {
             ArticuloNegocio articulo = new ArticuloNegocio();
             dgvListadoArticulos.DataSource = articulo.listar();
+
+            dgvListadoArticulos.Columns["Id"].Visible = false;
+            dgvListadoArticulos.Columns["IdMarca"].Visible = false;
+            dgvListadoArticulos.Columns["IdCategoria"].Visible = false;
+            dgvListadoArticulos.Columns["ImagenUrl"].Visible = false;
         }
     }
 }

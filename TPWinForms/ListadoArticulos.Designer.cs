@@ -35,9 +35,9 @@
             // dgvListadoArticulos
             // 
             this.dgvListadoArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListadoArticulos.Location = new System.Drawing.Point(104, 59);
+            this.dgvListadoArticulos.Location = new System.Drawing.Point(60, 45);
             this.dgvListadoArticulos.Name = "dgvListadoArticulos";
-            this.dgvListadoArticulos.Size = new System.Drawing.Size(449, 241);
+            this.dgvListadoArticulos.Size = new System.Drawing.Size(663, 303);
             this.dgvListadoArticulos.TabIndex = 0;
             // 
             // ListadoArticulos
