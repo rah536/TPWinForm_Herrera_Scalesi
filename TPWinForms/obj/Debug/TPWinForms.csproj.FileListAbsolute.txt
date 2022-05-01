@@ -1,19 +1,18 @@
-C:\Users\user\Desktop\TPWinForm\TPWinForms\bin\Debug\TPWinForms.exe.config
-C:\Users\user\Desktop\TPWinForm\TPWinForms\bin\Debug\TPWinForms.exe
-C:\Users\user\Desktop\TPWinForm\TPWinForms\bin\Debug\TPWinForms.pdb
-C:\Users\user\Desktop\TPWinForm\TPWinForms\obj\Debug\TPWinForms.csproj.AssemblyReference.cache
-C:\Users\user\Desktop\TPWinForm\TPWinForms\obj\Debug\TPWinForms.csproj.SuggestedBindingRedirects.cache
-C:\Users\user\Desktop\TPWinForm\TPWinForms\obj\Debug\TPWinForms.Properties.Resources.resources
-C:\Users\user\Desktop\TPWinForm\TPWinForms\obj\Debug\TPWinForms.csproj.GenerateResource.cache
-C:\Users\user\Desktop\TPWinForm\TPWinForms\obj\Debug\TPWinForms.csproj.CoreCompileInputs.cache
-C:\Users\user\Desktop\TPWinForm\TPWinForms\obj\Debug\TPWinForms.exe
-C:\Users\user\Desktop\TPWinForm\TPWinForms\obj\Debug\TPWinForms.pdb
-C:\Users\user\Desktop\TPWinForm\TPWinForms\obj\Debug\TPWinForms.Form1.resources
-C:\Users\user\Desktop\TPWinForm\TPWinForms\bin\Debug\Dominio.dll
-C:\Users\user\Desktop\TPWinForm\TPWinForms\bin\Debug\Negocio.dll
-C:\Users\user\Desktop\TPWinForm\TPWinForms\bin\Debug\Dominio.pdb
-C:\Users\user\Desktop\TPWinForm\TPWinForms\bin\Debug\Negocio.pdb
-C:\Users\user\Desktop\TPWinForm\TPWinForms\obj\Debug\TPWinForms.ListadoArticulos.resources
-C:\Users\user\Desktop\TPWinForm\TPWinForms\obj\Debug\TPWinForms.csproj.CopyComplete
-C:\Users\user\Desktop\TPWinForm\TPWinForms\obj\Debug\TPWinForms.AgregarArticulos.resources
-C:\Users\user\Desktop\TPWinForm\TPWinForms\obj\Debug\TPWinForms.ModificarArticulos.resources
+C:\Users\R\Desktop\IT\Practicas C#\TPWinForms3004\TPWinForms\bin\Debug\TPWinForms.exe.config
+C:\Users\R\Desktop\IT\Practicas C#\TPWinForms3004\TPWinForms\bin\Debug\TPWinForms.exe
+C:\Users\R\Desktop\IT\Practicas C#\TPWinForms3004\TPWinForms\bin\Debug\TPWinForms.pdb
+C:\Users\R\Desktop\IT\Practicas C#\TPWinForms3004\TPWinForms\bin\Debug\Dominio.dll
+C:\Users\R\Desktop\IT\Practicas C#\TPWinForms3004\TPWinForms\bin\Debug\Negocio.dll
+C:\Users\R\Desktop\IT\Practicas C#\TPWinForms3004\TPWinForms\bin\Debug\Dominio.pdb
+C:\Users\R\Desktop\IT\Practicas C#\TPWinForms3004\TPWinForms\bin\Debug\Negocio.pdb
+C:\Users\R\Desktop\IT\Practicas C#\TPWinForms3004\TPWinForms\obj\Debug\TPWinForms.csproj.AssemblyReference.cache
+C:\Users\R\Desktop\IT\Practicas C#\TPWinForms3004\TPWinForms\obj\Debug\TPWinForms.AgregarArticulos.resources
+C:\Users\R\Desktop\IT\Practicas C#\TPWinForms3004\TPWinForms\obj\Debug\TPWinForms.ListadoArticulos.resources
+C:\Users\R\Desktop\IT\Practicas C#\TPWinForms3004\TPWinForms\obj\Debug\TPWinForms.Form1.resources
+C:\Users\R\Desktop\IT\Practicas C#\TPWinForms3004\TPWinForms\obj\Debug\TPWinForms.ModificarArticulos.resources
+C:\Users\R\Desktop\IT\Practicas C#\TPWinForms3004\TPWinForms\obj\Debug\TPWinForms.Properties.Resources.resources
+C:\Users\R\Desktop\IT\Practicas C#\TPWinForms3004\TPWinForms\obj\Debug\TPWinForms.csproj.GenerateResource.cache
+C:\Users\R\Desktop\IT\Practicas C#\TPWinForms3004\TPWinForms\obj\Debug\TPWinForms.csproj.CoreCompileInputs.cache
+C:\Users\R\Desktop\IT\Practicas C#\TPWinForms3004\TPWinForms\obj\Debug\TPWinForms.csproj.CopyComplete
+C:\Users\R\Desktop\IT\Practicas C#\TPWinForms3004\TPWinForms\obj\Debug\TPWinForms.exe
+C:\Users\R\Desktop\IT\Practicas C#\TPWinForms3004\TPWinForms\obj\Debug\TPWinForms.pdb

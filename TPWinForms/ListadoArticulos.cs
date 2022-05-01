@@ -42,8 +42,20 @@ namespace TPWinForms
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            Form E = new EliminarArticulos();
-            E.ShowDialog();
+            //Form E = new EliminarArticulos();
+            //E.ShowDialog();
+
+            ArticuloNegocio articulo = new ArticuloNegocio();
+            Articulo seleccionado;
+            try
+            {
+                seleccionado = (Articulo)dgvListadoArticulos.CurrentRow.DataBoundItem;
+                articulo.eliminar(seleccionado.Id);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }
