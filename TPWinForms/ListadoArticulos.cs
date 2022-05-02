@@ -25,8 +25,11 @@ namespace TPWinForms
         {
 
             ArticuloNegocio articulo = new ArticuloNegocio();
-            dgvListadoArticulos.DataSource = articulo.listar();
             listaArticulo = articulo.listar();
+            dgvListadoArticulos.DataSource = listaArticulo;
+
+            cargarImagen(listaArticulo[0].ImagenUrl);
+            
 
             dgvListadoArticulos.Columns["Id"].Visible = false;
             dgvListadoArticulos.Columns["IdMarca"].Visible = false;
@@ -74,5 +77,32 @@ namespace TPWinForms
             
             
         }
+
+        private void dgvListadoArticulos_SelectionChanged(object sender, EventArgs e)
+        {
+
+            Articulo seleccionado = (Articulo)dgvListadoArticulos.CurrentRow.DataBoundItem;
+            cargarImagen(seleccionado.ImagenUrl);
+           
+        }
+    
+     
+        private void cargarImagen(string imagen)
+        {
+
+            try
+            {
+                pbUrlImagen.Load(imagen);
+
+            }
+
+            catch (Exception)
+            {
+                pbUrlImagen.Load("https://educacionprivada.org/wp-content/plugins/all-in-one-video-gallery/public/assets/images/placeholder-image.png");
+            }
+            
+        }
+    
+    
     }
 }

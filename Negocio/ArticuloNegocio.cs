@@ -18,14 +18,15 @@ namespace Negocio
             try
             {
 
-                 datos.setearConsulta("select a.codigo,a.nombre,a.descripcion,c.descripcion as categoria,m.descripcion as marca,a.precio,a.IdMarca,a.IdCategoria from articulos as a inner join CATEGORIAS as c on a.IdCategoria = c.id inner join marcas as m on a.IdMarca = m.id");
+                 datos.setearConsulta("select a.ImagenUrl,a.codigo,a.nombre,a.descripcion,c.descripcion as categoria,m.descripcion as marca,a.precio,a.IdMarca,a.IdCategoria from articulos as a inner join CATEGORIAS as c on a.IdCategoria = c.id inner join marcas as m on a.IdMarca = m.id");
                  datos.ejecutarLectura();
 
                  while (datos.Lector.Read())
                  {
                    
                     Articulo aux = new Articulo();
-                    
+
+                    aux.ImagenUrl = (string)datos.Lector["ImagenUrl"];
                     aux.Codigo = (string)datos.Lector["Codigo"];
                     aux.Nombre = (string)datos.Lector["Nombre"];
                     aux.Descripcion = (string)datos.Lector["Descripcion"];
