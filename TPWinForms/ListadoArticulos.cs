@@ -14,6 +14,8 @@ namespace TPWinForms
 {
     public partial class ListadoArticulos : Form
     {
+        private List<Articulo> listaArticulo;
+
         public ListadoArticulos()
         {
             InitializeComponent();
@@ -21,8 +23,10 @@ namespace TPWinForms
 
         private void ListadoArticulos_Load(object sender, EventArgs e)
         {
+
             ArticuloNegocio articulo = new ArticuloNegocio();
             dgvListadoArticulos.DataSource = articulo.listar();
+            listaArticulo = articulo.listar();
 
             dgvListadoArticulos.Columns["Id"].Visible = false;
             dgvListadoArticulos.Columns["IdMarca"].Visible = false;
@@ -56,6 +60,19 @@ namespace TPWinForms
             {
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void btnFiltro_Click(object sender, EventArgs e)
+        {
+            
+            List<Articulo> listaFiltrada;
+
+            listaFiltrada = listaArticulo.FindAll(x => x.Nombre == txtFiltro.Text);
+
+            dgvListadoArticulos.DataSource = null;
+            dgvListadoArticulos.DataSource = listaFiltrada;
+            
+            
         }
     }
 }
