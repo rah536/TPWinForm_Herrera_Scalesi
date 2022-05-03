@@ -65,24 +65,15 @@ namespace TPWinForms
             }
         }
 
-        private void btnFiltro_Click(object sender, EventArgs e)
-        {
-            
-            List<Articulo> listaFiltrada;
-
-            listaFiltrada = listaArticulo.FindAll(x => x.Nombre == txtFiltro.Text);
-
-            dgvListadoArticulos.DataSource = null;
-            dgvListadoArticulos.DataSource = listaFiltrada;
-            
-            
-        }
 
         private void dgvListadoArticulos_SelectionChanged(object sender, EventArgs e)
         {
+            if(dgvListadoArticulos.CurrentRow != null)
+            {
+                Articulo seleccionado = (Articulo)dgvListadoArticulos.CurrentRow.DataBoundItem;
+                cargarImagen(seleccionado.ImagenUrl);
+            }
 
-            Articulo seleccionado = (Articulo)dgvListadoArticulos.CurrentRow.DataBoundItem;
-            cargarImagen(seleccionado.ImagenUrl);
            
         }
     
@@ -102,7 +93,29 @@ namespace TPWinForms
             }
             
         }
-    
-    
+
+        private void txtFiltro_TextChanged(object sender, EventArgs e)
+        {
+            List<Articulo> listaFiltrada;
+            string filtro = txtFiltro.Text;
+
+            if (filtro != "")
+            {
+                listaFiltrada = listaArticulo.FindAll(x => x.Nombre.ToUpper().Contains(filtro.ToUpper()) || x.Marca.Descripcion.ToUpper().Contains(filtro.ToUpper()) || x.Categoria.Descripcion.ToUpper().Contains(filtro.ToUpper()));
+            }
+            else
+            {
+                listaFiltrada = listaArticulo;
+            }
+
+
+            dgvListadoArticulos.DataSource = null;
+            dgvListadoArticulos.DataSource = listaFiltrada;
+            dgvListadoArticulos.Columns["Id"].Visible = false;
+            dgvListadoArticulos.Columns["IdMarca"].Visible = false;
+            dgvListadoArticulos.Columns["IdCategoria"].Visible = false;
+            dgvListadoArticulos.Columns["ImagenUrl"].Visible = false;
+
+        }
     }
 }
