@@ -26,6 +26,7 @@ namespace TPWinForms
         {
             InitializeComponent();
             this.articulo = articulo;
+            Text = "Modificar Articulo";
         }
         
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -36,11 +37,15 @@ namespace TPWinForms
         private void btnAgregar_Click(object sender, EventArgs e)
         {
 
-            Articulo articulo = new Articulo();
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
-            
+
             try
             {
+                if (articulo == null)
+                {
+                    articulo = new Articulo();
+                }
+
                 articulo.Codigo = txtCodigo.Text;
                 articulo.Nombre = txtNombre.Text;
                 articulo.Descripcion = txtDescripcion.Text;
@@ -48,11 +53,20 @@ namespace TPWinForms
                 articulo.Precio = float.Parse(txtPrecio.Text);
                 articulo.Categoria = (Categoria)cbCategoria.SelectedItem;
                 articulo.Marca = (Marca)cbMarca.SelectedItem;
+
+
+                if (articulo.Id != 0) { 
+
+                    articuloNegocio.modificar(articulo);
+                    MessageBox.Show("Articulo modificado exitosamente");
                 
+                }
+                else
+                {
+                    articuloNegocio.agregar(articulo);
+                    MessageBox.Show("Articulo agregado exitosamente");
+                }
                 
-                articuloNegocio.agregar(articulo);
-                
-                MessageBox.Show("Articulo agregado exitosamente");
                 Close();
             
             

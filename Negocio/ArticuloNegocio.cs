@@ -18,7 +18,7 @@ namespace Negocio
             try
             {
 
-                 datos.setearConsulta("select a.ImagenUrl,a.codigo,a.nombre,a.descripcion,c.descripcion as categoria,m.descripcion as marca,a.precio,a.IdMarca,a.IdCategoria from articulos as a inner join CATEGORIAS as c on a.IdCategoria = c.id inner join marcas as m on a.IdMarca = m.id");
+                 datos.setearConsulta("select a.Id,a.ImagenUrl,a.codigo,a.nombre,a.descripcion,c.descripcion as categoria,m.descripcion as marca,a.precio,a.IdMarca,a.IdCategoria from articulos as a inner join CATEGORIAS as c on a.IdCategoria = c.id inner join marcas as m on a.IdMarca = m.id");
                  datos.ejecutarLectura();
 
                  while (datos.Lector.Read())
@@ -26,6 +26,7 @@ namespace Negocio
                    
                     Articulo aux = new Articulo();
 
+                    aux.Id = (int)datos.Lector["Id"];
                     aux.ImagenUrl = (string)datos.Lector["ImagenUrl"];
                     aux.Codigo = (string)datos.Lector["Codigo"];
                     aux.Nombre = (string)datos.Lector["Nombre"];
@@ -101,6 +102,27 @@ namespace Negocio
 
         }
 
-        
+        public void modificar(Articulo articulo)
+        {
+            AccesoDatos accesoDatos = new AccesoDatos();
+            
+            try
+            {
+                accesoDatos.setearConsulta("update articulos set codigo = @codigo,nombre = @nombre,descripcion = @descripcion, precio = @precio where id =@Id");
+                accesoDatos.setearParametro("@codigo", articulo.Codigo);
+                accesoDatos.setearParametro("@nombre",articulo.Nombre );
+                accesoDatos.setearParametro("@descripcion",articulo.Descripcion );
+                //accesoDatos.setearParametro("@urlimagen",articulo.ImagenUrl );
+                accesoDatos.setearParametro("@precio", articulo.Precio);
+                accesoDatos.setearParametro("@Id", articulo.Id);
+                accesoDatos.ejecutarAccion();
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
     }
 }
