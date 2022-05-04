@@ -93,6 +93,12 @@
     <EmbeddedResource Include="AgregarArticulos.resx">
       <DependentUpon>AgregarArticulos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BusquedaArticulos.resx">
+      <DependentUpon>BusquedaArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetalleArticulos.resx">
+      <DependentUpon>DetalleArticulos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListadoArticulos.resx">
       <DependentUpon>ListadoArticulos.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,6 +139,9 @@
       <Project>{baa0a6d6-edaf-4f1f-b8fe-bee8dfa7234b}</Project>
       <Name>Negocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Imagenes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

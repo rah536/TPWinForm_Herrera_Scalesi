@@ -29,6 +29,7 @@ namespace TPWinForms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lblMenu = new System.Windows.Forms.Label();
             this.btnListar = new System.Windows.Forms.Button();
             this.btnAgregarArticulos = new System.Windows.Forms.Button();
@@ -38,58 +39,65 @@ namespace TPWinForms
             // lblMenu
             // 
             this.lblMenu.AutoSize = true;
-            this.lblMenu.Location = new System.Drawing.Point(218, 49);
-            this.lblMenu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMenu.Font = new System.Drawing.Font("Tempus Sans ITC", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMenu.Location = new System.Drawing.Point(49, 36);
             this.lblMenu.Name = "lblMenu";
-            this.lblMenu.Size = new System.Drawing.Size(206, 17);
+            this.lblMenu.Size = new System.Drawing.Size(467, 42);
             this.lblMenu.TabIndex = 0;
             this.lblMenu.Text = "Sistema de gestion de Articulos";
             // 
             // btnListar
             // 
-            this.btnListar.Location = new System.Drawing.Point(244, 122);
-            this.btnListar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnListar.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.btnListar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnListar.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListar.Location = new System.Drawing.Point(212, 124);
             this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(147, 63);
+            this.btnListar.Size = new System.Drawing.Size(110, 51);
             this.btnListar.TabIndex = 1;
             this.btnListar.Text = "Listar Articulos";
-            this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.UseVisualStyleBackColor = false;
             this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // btnAgregarArticulos
             // 
-            this.btnAgregarArticulos.Location = new System.Drawing.Point(244, 230);
-            this.btnAgregarArticulos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregarArticulos.BackColor = System.Drawing.Color.Coral;
+            this.btnAgregarArticulos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarArticulos.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarArticulos.Location = new System.Drawing.Point(212, 202);
             this.btnAgregarArticulos.Name = "btnAgregarArticulos";
-            this.btnAgregarArticulos.Size = new System.Drawing.Size(147, 61);
+            this.btnAgregarArticulos.Size = new System.Drawing.Size(110, 50);
             this.btnAgregarArticulos.TabIndex = 3;
             this.btnAgregarArticulos.Text = "Agregar Articulos";
-            this.btnAgregarArticulos.UseVisualStyleBackColor = true;
+            this.btnAgregarArticulos.UseVisualStyleBackColor = false;
             this.btnAgregarArticulos.Click += new System.EventHandler(this.btnAgregarArticulos_Click);
             // 
             // btnDetalleArticulos
             // 
-            this.btnDetalleArticulos.Location = new System.Drawing.Point(244, 338);
-            this.btnDetalleArticulos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDetalleArticulos.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnDetalleArticulos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDetalleArticulos.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDetalleArticulos.Location = new System.Drawing.Point(212, 284);
             this.btnDetalleArticulos.Name = "btnDetalleArticulos";
-            this.btnDetalleArticulos.Size = new System.Drawing.Size(147, 63);
+            this.btnDetalleArticulos.Size = new System.Drawing.Size(110, 51);
             this.btnDetalleArticulos.TabIndex = 6;
             this.btnDetalleArticulos.Text = "Detalle Articulos";
-            this.btnDetalleArticulos.UseVisualStyleBackColor = true;
+            this.btnDetalleArticulos.UseVisualStyleBackColor = false;
             this.btnDetalleArticulos.Click += new System.EventHandler(this.btnDetalleArticulos_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.BackColor = System.Drawing.Color.Silver;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(771, 450);
             this.Controls.Add(this.btnDetalleArticulos);
             this.Controls.Add(this.btnAgregarArticulos);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.lblMenu);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Sistema de gestion de Articulos";
             this.ResumeLayout(false);
             this.PerformLayout();
 

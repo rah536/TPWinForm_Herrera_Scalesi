@@ -25,8 +25,10 @@ namespace TPWinForms
         public AgregarArticulos(Articulo articulo)
         {
             InitializeComponent();
+            
             this.articulo = articulo;
             Text = "Modificar Articulo";
+            this.BackColor = SystemColors.ControlDark;
         }
         
         private void btnCancelar_Click(object sender, EventArgs e)

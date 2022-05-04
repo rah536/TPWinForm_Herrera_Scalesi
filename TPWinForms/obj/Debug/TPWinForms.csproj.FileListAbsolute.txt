@@ -53,3 +53,5 @@ C:\Users\R\Desktop\IT\Practicas C#\TPWinForms0305\TPWinForms\obj\Debug\TPWinForm
 C:\Users\R\Desktop\IT\Practicas C#\TPWinForms0305\TPWinForms\obj\Debug\TPWinForms.csproj.CopyComplete
 C:\Users\R\Desktop\IT\Practicas C#\TPWinForms0305\TPWinForms\obj\Debug\TPWinForms.exe
 C:\Users\R\Desktop\IT\Practicas C#\TPWinForms0305\TPWinForms\obj\Debug\TPWinForms.pdb
+C:\Users\user\Desktop\TPWinForm\TPWinForms\obj\Debug\TPWinForms.BusquedaArticulos.resources
+C:\Users\user\Desktop\TPWinForm\TPWinForms\obj\Debug\TPWinForms.DetalleArticulos.resources
