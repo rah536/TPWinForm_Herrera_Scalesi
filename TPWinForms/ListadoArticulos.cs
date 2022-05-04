@@ -49,15 +49,18 @@ namespace TPWinForms
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            //Form E = new EliminarArticulos();
-            //E.ShowDialog();
-
             ArticuloNegocio articulo = new ArticuloNegocio();
             Articulo seleccionado;
             try
             {
-                seleccionado = (Articulo)dgvListadoArticulos.CurrentRow.DataBoundItem;
-                articulo.eliminar(seleccionado.Id);
+                DialogResult respuesta = MessageBox.Show("Desea eliminar definitivamente el articulo?", "Eliminando", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if(respuesta == DialogResult.Yes)
+                {
+                    seleccionado = (Articulo)dgvListadoArticulos.CurrentRow.DataBoundItem;
+                    articulo.eliminar(seleccionado.Id);
+                    Cargar();
+                }
+                
             }
             catch (Exception ex)
             {
@@ -76,8 +79,22 @@ namespace TPWinForms
 
            
         }
-    
-     
+
+        private void Cargar() 
+        {
+            ArticuloNegocio articulo = new ArticuloNegocio();
+            listaArticulo = articulo.listar();
+            dgvListadoArticulos.DataSource = listaArticulo;
+
+            cargarImagen(listaArticulo[0].ImagenUrl);
+
+
+            dgvListadoArticulos.Columns["Id"].Visible = false;
+            dgvListadoArticulos.Columns["IdMarca"].Visible = false;
+            dgvListadoArticulos.Columns["IdCategoria"].Visible = false;
+            dgvListadoArticulos.Columns["ImagenUrl"].Visible = false;
+        }
+
         private void cargarImagen(string imagen)
         {
 

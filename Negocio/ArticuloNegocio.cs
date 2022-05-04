@@ -91,7 +91,7 @@ namespace Negocio
             try 
             {
                 AccesoDatos datos = new AccesoDatos();
-                datos.setearConsulta("detele from articulos where id = @id");
+                datos.setearConsulta("delete from articulos where id = @id");
                 datos.setearParametro("@id",id);
                 datos.ejecutarAccion();
             }
