@@ -50,9 +50,10 @@
             // 
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo.Location = new System.Drawing.Point(69, 52);
+            this.lblCodigo.Location = new System.Drawing.Point(92, 64);
+            this.lblCodigo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(61, 16);
+            this.lblCodigo.Size = new System.Drawing.Size(75, 20);
             this.lblCodigo.TabIndex = 0;
             this.lblCodigo.Text = "Codigo";
             // 
@@ -60,9 +61,10 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(69, 108);
+            this.lblNombre.Location = new System.Drawing.Point(92, 133);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(61, 16);
+            this.lblNombre.Size = new System.Drawing.Size(75, 20);
             this.lblNombre.TabIndex = 1;
             this.lblNombre.Text = "Nombre";
             // 
@@ -70,9 +72,10 @@
             // 
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcion.Location = new System.Drawing.Point(69, 166);
+            this.lblDescripcion.Location = new System.Drawing.Point(92, 204);
+            this.lblDescripcion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(106, 16);
+            this.lblDescripcion.Size = new System.Drawing.Size(130, 20);
             this.lblDescripcion.TabIndex = 2;
             this.lblDescripcion.Text = "Descripcion";
             // 
@@ -80,9 +83,10 @@
             // 
             this.lblMarca.AutoSize = true;
             this.lblMarca.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarca.Location = new System.Drawing.Point(69, 217);
+            this.lblMarca.Location = new System.Drawing.Point(92, 267);
+            this.lblMarca.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(52, 16);
+            this.lblMarca.Size = new System.Drawing.Size(64, 20);
             this.lblMarca.TabIndex = 3;
             this.lblMarca.Text = "Marca";
             // 
@@ -90,9 +94,10 @@
             // 
             this.lblCategoria.AutoSize = true;
             this.lblCategoria.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategoria.Location = new System.Drawing.Point(68, 272);
+            this.lblCategoria.Location = new System.Drawing.Point(91, 335);
+            this.lblCategoria.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(88, 16);
+            this.lblCategoria.Size = new System.Drawing.Size(108, 20);
             this.lblCategoria.TabIndex = 4;
             this.lblCategoria.Text = "Categoria";
             // 
@@ -100,9 +105,10 @@
             // 
             this.lblImagenUrl.AutoSize = true;
             this.lblImagenUrl.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblImagenUrl.Location = new System.Drawing.Point(69, 321);
+            this.lblImagenUrl.Location = new System.Drawing.Point(92, 395);
+            this.lblImagenUrl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblImagenUrl.Name = "lblImagenUrl";
-            this.lblImagenUrl.Size = new System.Drawing.Size(97, 16);
+            this.lblImagenUrl.Size = new System.Drawing.Size(119, 20);
             this.lblImagenUrl.TabIndex = 5;
             this.lblImagenUrl.Text = "Url Imagen";
             // 
@@ -110,9 +116,10 @@
             // 
             this.lblPrecio.AutoSize = true;
             this.lblPrecio.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.Location = new System.Drawing.Point(69, 371);
+            this.lblPrecio.Location = new System.Drawing.Point(92, 457);
+            this.lblPrecio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(61, 16);
+            this.lblPrecio.Size = new System.Drawing.Size(75, 20);
             this.lblPrecio.TabIndex = 6;
             this.lblPrecio.Text = "Precio";
             // 
@@ -121,9 +128,10 @@
             this.btnAgregar.BackColor = System.Drawing.Color.Chartreuse;
             this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAgregar.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(410, 398);
+            this.btnAgregar.Location = new System.Drawing.Point(547, 490);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(107, 35);
+            this.btnAgregar.Size = new System.Drawing.Size(143, 43);
             this.btnAgregar.TabIndex = 7;
             this.btnAgregar.Text = "Confirmar";
             this.btnAgregar.UseVisualStyleBackColor = false;
@@ -131,37 +139,43 @@
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(228, 52);
+            this.txtCodigo.Location = new System.Drawing.Point(304, 64);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(135, 20);
+            this.txtCodigo.Size = new System.Drawing.Size(179, 22);
             this.txtCodigo.TabIndex = 8;
+            this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(228, 108);
+            this.txtNombre.Location = new System.Drawing.Point(304, 133);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(135, 20);
+            this.txtNombre.Size = new System.Drawing.Size(179, 22);
             this.txtNombre.TabIndex = 9;
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(228, 166);
+            this.txtDescripcion.Location = new System.Drawing.Point(304, 204);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(135, 20);
+            this.txtDescripcion.Size = new System.Drawing.Size(179, 22);
             this.txtDescripcion.TabIndex = 10;
             // 
             // txtUrlImagen
             // 
-            this.txtUrlImagen.Location = new System.Drawing.Point(228, 321);
+            this.txtUrlImagen.Location = new System.Drawing.Point(304, 395);
+            this.txtUrlImagen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUrlImagen.Name = "txtUrlImagen";
-            this.txtUrlImagen.Size = new System.Drawing.Size(135, 20);
+            this.txtUrlImagen.Size = new System.Drawing.Size(179, 22);
             this.txtUrlImagen.TabIndex = 13;
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(228, 368);
+            this.txtPrecio.Location = new System.Drawing.Point(304, 453);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(135, 20);
+            this.txtPrecio.Size = new System.Drawing.Size(179, 22);
             this.txtPrecio.TabIndex = 14;
             // 
             // btnCancelar
@@ -169,9 +183,10 @@
             this.btnCancelar.BackColor = System.Drawing.Color.Red;
             this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancelar.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(552, 398);
+            this.btnCancelar.Location = new System.Drawing.Point(736, 490);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(99, 35);
+            this.btnCancelar.Size = new System.Drawing.Size(132, 43);
             this.btnCancelar.TabIndex = 15;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -181,26 +196,28 @@
             // 
             this.cbMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMarca.FormattingEnabled = true;
-            this.cbMarca.Location = new System.Drawing.Point(228, 217);
+            this.cbMarca.Location = new System.Drawing.Point(304, 267);
+            this.cbMarca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbMarca.Name = "cbMarca";
-            this.cbMarca.Size = new System.Drawing.Size(135, 21);
+            this.cbMarca.Size = new System.Drawing.Size(179, 24);
             this.cbMarca.TabIndex = 16;
             // 
             // cbCategoria
             // 
             this.cbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCategoria.FormattingEnabled = true;
-            this.cbCategoria.Location = new System.Drawing.Point(228, 272);
+            this.cbCategoria.Location = new System.Drawing.Point(304, 335);
+            this.cbCategoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbCategoria.Name = "cbCategoria";
-            this.cbCategoria.Size = new System.Drawing.Size(135, 21);
+            this.cbCategoria.Size = new System.Drawing.Size(179, 24);
             this.cbCategoria.TabIndex = 17;
             // 
             // AgregarArticulos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Coral;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.cbCategoria);
             this.Controls.Add(this.cbMarca);
             this.Controls.Add(this.btnCancelar);
@@ -217,6 +234,7 @@
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblCodigo);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AgregarArticulos";
             this.Text = "Agregar Articulos";
             this.Load += new System.EventHandler(this.AgregarArticulos_Load);

@@ -36,16 +36,48 @@ namespace TPWinForms
             Close();
         }
 
+
         private void btnAgregar_Click(object sender, EventArgs e)
         {
 
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
+
 
             try
             {
                 if (articulo == null)
                 {
                     articulo = new Articulo();
+                }
+
+                
+                if(string.IsNullOrEmpty(txtCodigo.Text))
+                {
+                    MessageBox.Show("Ingrese código del artículo");
+                    return;
+                }
+
+                if (string.IsNullOrEmpty(txtNombre.Text))
+                {
+                    MessageBox.Show("Ingrese Nombre del artículo");
+                    return;
+                }
+
+
+                foreach (char caracter in txtPrecio.Text)
+                {
+                    if(!(char.IsNumber(caracter)))
+                     {
+                        MessageBox.Show("Ingrese solo números en precio del artículo");
+                        return;
+                     }
+                }
+               
+
+                if (string.IsNullOrEmpty(txtPrecio.Text))
+                {
+                    MessageBox.Show("Ingrese precio del artículo");
+                    return;
                 }
 
                 articulo.Codigo = txtCodigo.Text;
@@ -113,6 +145,11 @@ namespace TPWinForms
                 MessageBox.Show(ex.ToString());
             }
 
+
+        }
+
+        private void txtCodigo_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
