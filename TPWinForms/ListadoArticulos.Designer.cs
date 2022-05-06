@@ -115,6 +115,7 @@
             this.btnVolverMenu.TabIndex = 7;
             this.btnVolverMenu.Text = "VOLVER AL MENU";
             this.btnVolverMenu.UseVisualStyleBackColor = true;
+            this.btnVolverMenu.Click += new System.EventHandler(this.btnVolverMenu_Click);
             // 
             // ListadoArticulos
             // 

@@ -57,3 +57,24 @@ C:\Users\user\Desktop\TPWinForm\TPWinForms\obj\Debug\TPWinForms.BusquedaArticulo
 C:\Users\user\Desktop\TPWinForm\TPWinForms\obj\Debug\TPWinForms.DetalleArticulos.resources
 C:\Users\R\Desktop\IT\Practicas C#\TPWinForms0305\TPWinForms\obj\Debug\TPWinForms.BusquedaArticulos.resources
 C:\Users\R\Desktop\IT\Practicas C#\TPWinForms0305\TPWinForms\obj\Debug\TPWinForms.DetalleArticulos.resources
+C:\Users\user\Desktop\TPWinForm1\TPWinForms\bin\Debug\TPWinForms.exe.config
+C:\Users\user\Desktop\TPWinForm1\TPWinForms\bin\Debug\TPWinForms.exe
+C:\Users\user\Desktop\TPWinForm1\TPWinForms\bin\Debug\TPWinForms.pdb
+C:\Users\user\Desktop\TPWinForm1\TPWinForms\bin\Debug\Dominio.dll
+C:\Users\user\Desktop\TPWinForm1\TPWinForms\bin\Debug\Negocio.dll
+C:\Users\user\Desktop\TPWinForm1\TPWinForms\bin\Debug\Dominio.pdb
+C:\Users\user\Desktop\TPWinForm1\TPWinForms\bin\Debug\Negocio.pdb
+C:\Users\user\Desktop\TPWinForm1\TPWinForms\obj\Debug\TPWinForms.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\TPWinForm1\TPWinForms\obj\Debug\TPWinForms.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\TPWinForm1\TPWinForms\obj\Debug\TPWinForms.AgregarArticulos.resources
+C:\Users\user\Desktop\TPWinForm1\TPWinForms\obj\Debug\TPWinForms.BusquedaArticulos.resources
+C:\Users\user\Desktop\TPWinForm1\TPWinForms\obj\Debug\TPWinForms.DetalleArticulos.resources
+C:\Users\user\Desktop\TPWinForm1\TPWinForms\obj\Debug\TPWinForms.ListadoArticulos.resources
+C:\Users\user\Desktop\TPWinForm1\TPWinForms\obj\Debug\TPWinForms.Form1.resources
+C:\Users\user\Desktop\TPWinForm1\TPWinForms\obj\Debug\TPWinForms.ModificarArticulos.resources
+C:\Users\user\Desktop\TPWinForm1\TPWinForms\obj\Debug\TPWinForms.Properties.Resources.resources
+C:\Users\user\Desktop\TPWinForm1\TPWinForms\obj\Debug\TPWinForms.csproj.GenerateResource.cache
+C:\Users\user\Desktop\TPWinForm1\TPWinForms\obj\Debug\TPWinForms.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\TPWinForm1\TPWinForms\obj\Debug\TPWinForms.csproj.CopyComplete
+C:\Users\user\Desktop\TPWinForm1\TPWinForms\obj\Debug\TPWinForms.exe
+C:\Users\user\Desktop\TPWinForm1\TPWinForms\obj\Debug\TPWinForms.pdb

@@ -141,5 +141,11 @@ namespace TPWinForms
             dgvListadoArticulos.Columns["ImagenUrl"].Visible = false;
 
         }
+
+        private void btnVolverMenu_Click(object sender, EventArgs e)
+        {
+            Form M = new Form1();
+            M.ShowDialog();
+        }
     }
 }
