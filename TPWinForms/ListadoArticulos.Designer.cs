@@ -36,6 +36,7 @@
             this.txtFiltro = new System.Windows.Forms.TextBox();
             this.pbUrlImagen = new System.Windows.Forms.PictureBox();
             this.btnVolverMenu = new System.Windows.Forms.Button();
+            this.btnDetalleArticulos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListadoArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUrlImagen)).BeginInit();
             this.SuspendLayout();
@@ -55,7 +56,7 @@
             this.btnModificar.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnModificar.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(169, 372);
+            this.btnModificar.Location = new System.Drawing.Point(37, 372);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(97, 40);
             this.btnModificar.TabIndex = 1;
@@ -68,7 +69,7 @@
             this.btnEliminar.BackColor = System.Drawing.Color.Crimson;
             this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEliminar.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(313, 372);
+            this.btnEliminar.Location = new System.Drawing.Point(236, 372);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(91, 40);
             this.btnEliminar.TabIndex = 2;
@@ -117,12 +118,26 @@
             this.btnVolverMenu.UseVisualStyleBackColor = true;
             this.btnVolverMenu.Click += new System.EventHandler(this.btnVolverMenu_Click);
             // 
+            // btnDetalleArticulos
+            // 
+            this.btnDetalleArticulos.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnDetalleArticulos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDetalleArticulos.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDetalleArticulos.Location = new System.Drawing.Point(421, 372);
+            this.btnDetalleArticulos.Name = "btnDetalleArticulos";
+            this.btnDetalleArticulos.Size = new System.Drawing.Size(110, 40);
+            this.btnDetalleArticulos.TabIndex = 8;
+            this.btnDetalleArticulos.Text = "Ver detalle";
+            this.btnDetalleArticulos.UseVisualStyleBackColor = false;
+            this.btnDetalleArticulos.Click += new System.EventHandler(this.btnDetalleArticulos_Click);
+            // 
             // ListadoArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.ClientSize = new System.Drawing.Size(771, 450);
+            this.Controls.Add(this.btnDetalleArticulos);
             this.Controls.Add(this.btnVolverMenu);
             this.Controls.Add(this.pbUrlImagen);
             this.Controls.Add(this.txtFiltro);
@@ -149,5 +164,6 @@
         private System.Windows.Forms.TextBox txtFiltro;
         private System.Windows.Forms.PictureBox pbUrlImagen;
         private System.Windows.Forms.Button btnVolverMenu;
+        private System.Windows.Forms.Button btnDetalleArticulos;
     }
 }

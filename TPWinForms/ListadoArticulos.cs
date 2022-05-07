@@ -147,5 +147,11 @@ namespace TPWinForms
             Form M = new Form1();
             M.ShowDialog();
         }
+
+        private void btnDetalleArticulos_Click(object sender, EventArgs e)
+        {
+            Form E = new DetalleArticulos();
+            E.ShowDialog();
+        }
     }
 }
