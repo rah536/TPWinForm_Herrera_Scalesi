@@ -111,12 +111,6 @@ namespace TPWinForms
             
         }
 
-        private void validarFiltro()
-        {
-
-
-
-        }
 
         private void txtFiltro_TextChanged(object sender, EventArgs e)
         {

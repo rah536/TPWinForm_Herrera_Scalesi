@@ -132,7 +132,8 @@ namespace TPWinForms
                     txtCodigo.Text = articulo.Codigo.ToString();
                     txtNombre.Text = articulo.Nombre.ToString();
                     txtDescripcion.Text = articulo.Descripcion.ToString();
-                    //txtUrlImagen.Text = articulo.ImagenUrl.ToString();
+                    txtUrlImagen.Text = articulo.ImagenUrl;
+                    cargarImagen(articulo.ImagenUrl);
                     txtPrecio.Text = articulo.Precio.ToString();
 
                     cbCategoria.SelectedValue = articulo.Categoria.Id;
@@ -149,6 +150,27 @@ namespace TPWinForms
         }
 
         private void txtCodigo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void cargarImagen(string imagen)
+        {
+
+            try
+            {
+                pbUrlImagenMod.Load(imagen);
+                
+
+            }
+
+            catch (Exception)
+            {
+                pbUrlImagenMod.Load("https://educacionprivada.org/wp-content/plugins/all-in-one-video-gallery/public/assets/images/placeholder-image.png");
+            }
+
+        }
+
+        private void pbUrlImagenMod_Click(object sender, EventArgs e)
         {
 
         }

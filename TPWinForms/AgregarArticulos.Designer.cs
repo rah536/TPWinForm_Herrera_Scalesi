@@ -44,6 +44,8 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.cbMarca = new System.Windows.Forms.ComboBox();
             this.cbCategoria = new System.Windows.Forms.ComboBox();
+            this.pbUrlImagenMod = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUrlImagenMod)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCodigo
@@ -129,7 +131,7 @@
             this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAgregar.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.Location = new System.Drawing.Point(547, 490);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(143, 43);
             this.btnAgregar.TabIndex = 7;
@@ -140,7 +142,7 @@
             // txtCodigo
             // 
             this.txtCodigo.Location = new System.Drawing.Point(304, 64);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(179, 22);
             this.txtCodigo.TabIndex = 8;
@@ -149,7 +151,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(304, 133);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(179, 22);
             this.txtNombre.TabIndex = 9;
@@ -157,7 +159,7 @@
             // txtDescripcion
             // 
             this.txtDescripcion.Location = new System.Drawing.Point(304, 204);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(179, 22);
             this.txtDescripcion.TabIndex = 10;
@@ -165,7 +167,7 @@
             // txtUrlImagen
             // 
             this.txtUrlImagen.Location = new System.Drawing.Point(304, 395);
-            this.txtUrlImagen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUrlImagen.Margin = new System.Windows.Forms.Padding(4);
             this.txtUrlImagen.Name = "txtUrlImagen";
             this.txtUrlImagen.Size = new System.Drawing.Size(179, 22);
             this.txtUrlImagen.TabIndex = 13;
@@ -173,7 +175,7 @@
             // txtPrecio
             // 
             this.txtPrecio.Location = new System.Drawing.Point(304, 453);
-            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(179, 22);
             this.txtPrecio.TabIndex = 14;
@@ -184,7 +186,7 @@
             this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancelar.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Location = new System.Drawing.Point(736, 490);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(132, 43);
             this.btnCancelar.TabIndex = 15;
@@ -197,7 +199,7 @@
             this.cbMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMarca.FormattingEnabled = true;
             this.cbMarca.Location = new System.Drawing.Point(304, 267);
-            this.cbMarca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbMarca.Margin = new System.Windows.Forms.Padding(4);
             this.cbMarca.Name = "cbMarca";
             this.cbMarca.Size = new System.Drawing.Size(179, 24);
             this.cbMarca.TabIndex = 16;
@@ -207,10 +209,20 @@
             this.cbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCategoria.FormattingEnabled = true;
             this.cbCategoria.Location = new System.Drawing.Point(304, 335);
-            this.cbCategoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbCategoria.Margin = new System.Windows.Forms.Padding(4);
             this.cbCategoria.Name = "cbCategoria";
             this.cbCategoria.Size = new System.Drawing.Size(179, 24);
             this.cbCategoria.TabIndex = 17;
+            // 
+            // pbUrlImagenMod
+            // 
+            this.pbUrlImagenMod.Location = new System.Drawing.Point(547, 123);
+            this.pbUrlImagenMod.Name = "pbUrlImagenMod";
+            this.pbUrlImagenMod.Size = new System.Drawing.Size(376, 308);
+            this.pbUrlImagenMod.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbUrlImagenMod.TabIndex = 18;
+            this.pbUrlImagenMod.TabStop = false;
+            this.pbUrlImagenMod.Click += new System.EventHandler(this.pbUrlImagenMod_Click);
             // 
             // AgregarArticulos
             // 
@@ -218,6 +230,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Coral;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.pbUrlImagenMod);
             this.Controls.Add(this.cbCategoria);
             this.Controls.Add(this.cbMarca);
             this.Controls.Add(this.btnCancelar);
@@ -234,10 +247,11 @@
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblCodigo);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AgregarArticulos";
             this.Text = "Agregar Articulos";
             this.Load += new System.EventHandler(this.AgregarArticulos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbUrlImagenMod)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,5 +275,6 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.ComboBox cbMarca;
         private System.Windows.Forms.ComboBox cbCategoria;
+        private System.Windows.Forms.PictureBox pbUrlImagenMod;
     }
 }
