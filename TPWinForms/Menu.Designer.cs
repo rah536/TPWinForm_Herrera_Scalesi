@@ -38,10 +38,11 @@ namespace TPWinForms
             // lblMenu
             // 
             this.lblMenu.AutoSize = true;
+            this.lblMenu.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblMenu.Font = new System.Drawing.Font("Tempus Sans ITC", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMenu.Location = new System.Drawing.Point(49, 36);
             this.lblMenu.Name = "lblMenu";
-            this.lblMenu.Size = new System.Drawing.Size(467, 42);
+            this.lblMenu.Size = new System.Drawing.Size(469, 44);
             this.lblMenu.TabIndex = 0;
             this.lblMenu.Text = "Sistema de gestion de Articulos";
             // 

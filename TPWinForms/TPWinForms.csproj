@@ -93,9 +93,6 @@
     <EmbeddedResource Include="AgregarArticulos.resx">
       <DependentUpon>AgregarArticulos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BusquedaArticulos.resx">
-      <DependentUpon>BusquedaArticulos.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DetalleArticulos.resx">
       <DependentUpon>DetalleArticulos.cs</DependentUpon>
     </EmbeddedResource>
