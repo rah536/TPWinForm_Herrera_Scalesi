@@ -67,6 +67,7 @@ C:\Users\user\Desktop\TPWinForm1\TPWinForms\bin\Debug\Negocio.pdb
 C:\Users\user\Desktop\TPWinForm1\TPWinForms\obj\Debug\TPWinForms.csproj.AssemblyReference.cache
 C:\Users\user\Desktop\TPWinForm1\TPWinForms\obj\Debug\TPWinForms.csproj.SuggestedBindingRedirects.cache
 C:\Users\user\Desktop\TPWinForm1\TPWinForms\obj\Debug\TPWinForms.AgregarArticulos.resources
+C:\Users\user\Desktop\TPWinForm1\TPWinForms\obj\Debug\TPWinForms.BusquedaArticulos.resources
 C:\Users\user\Desktop\TPWinForm1\TPWinForms\obj\Debug\TPWinForms.DetalleArticulos.resources
 C:\Users\user\Desktop\TPWinForm1\TPWinForms\obj\Debug\TPWinForms.ListadoArticulos.resources
 C:\Users\user\Desktop\TPWinForm1\TPWinForms\obj\Debug\TPWinForms.Form1.resources

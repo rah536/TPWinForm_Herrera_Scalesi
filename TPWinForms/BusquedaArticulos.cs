@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Negocio;
+using Dominio;
 
 namespace TPWinForms
 {
@@ -16,5 +18,8 @@ namespace TPWinForms
         {
             InitializeComponent();
         }
+
+        
+
     }
 }
