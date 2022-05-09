@@ -1,4 +1,4 @@
-SISTEMA DE GESTION DE ARTICULOS CON WINDOWS FORMS.
+# SISTEMA DE GESTION DE ARTICULOS CON WINDOWS FORMS.
 
 En esta ocasion, se realizo una aplicacion de escritorio con Windows Forms, la cual realiza un ABM sobre una
 base de datos.
