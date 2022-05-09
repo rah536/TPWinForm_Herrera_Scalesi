@@ -95,7 +95,7 @@ namespace TPWinForms
             dgvListadoArticulos.Columns["ImagenUrl"].Visible = false;
         }
 
-        private void cargarImagen(string imagen)
+        public void cargarImagen(string imagen)
         {
 
             try
@@ -138,14 +138,20 @@ namespace TPWinForms
 
         private void btnVolverMenu_Click(object sender, EventArgs e)
         {
-            Form M = new Form1();
-            M.ShowDialog();
+            Close();
         }
 
         private void btnDetalleArticulos_Click(object sender, EventArgs e)
         {
-            Form E = new DetalleArticulos();
-            E.ShowDialog();
+            // Form E = new DetalleArticulos();
+            //E.ShowDialog();
+            Articulo seleccionado;
+            seleccionado = (Articulo)dgvListadoArticulos.CurrentRow.DataBoundItem;
+            
+            Form detalle = new DetalleArticulos(seleccionado);
+
+            detalle.ShowDialog();
+            
         }
     }
 }

@@ -18,7 +18,7 @@ namespace Negocio
             try
             {
 
-                datos.setearConsulta("select descripcion from marcas");
+                datos.setearConsulta("select id,descripcion from marcas");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
@@ -27,6 +27,7 @@ namespace Negocio
                     Marca aux = new Marca();
 
                     aux.Descripcion = (string)datos.Lector["descripcion"];
+                    aux.Id = (int)datos.Lector["Id"];
 
                     lista.Add(aux);
 

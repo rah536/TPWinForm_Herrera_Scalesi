@@ -93,6 +93,9 @@ namespace TPWinForms
 
                     articuloNegocio.modificar(articulo);
                     MessageBox.Show("Articulo modificado exitosamente");
+
+                    ListadoArticulos listadoArticulos = new ListadoArticulos();
+                    //listadoArticulos.
                 
                 }
                 else
